@@ -1,6 +1,7 @@
 # fipette
 
 Small app for generating Less color function from given base and derived colors.
+An [extension](https://chrome.google.com/webstore/detail/less-color-function-gener/gagcjlijmonkadfdkgpbambfgfhchppg?utm_source=chrome-ntp-icon) based on this app.
 
 ## Project setup
 ```
