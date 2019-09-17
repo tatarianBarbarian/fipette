@@ -1,5 +1,7 @@
 # fipette
 
+Small app for generating Less color function from given base and derived colors.
+
 ## Project setup
 ```
 npm install

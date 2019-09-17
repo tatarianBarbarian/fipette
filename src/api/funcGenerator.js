@@ -1,6 +1,5 @@
 import Color from 'color';
 import * as R from "ramda";
-import { mirrorPalette } from '../misc/palette';
 
 function prepareColors(baseColor, derivedColor) {
     const baseColorObj = new Color(baseColor).hsl().round();
@@ -9,7 +8,7 @@ function prepareColors(baseColor, derivedColor) {
     const result = [
         [...baseColorObj.color, baseColorObj.valpha],
         [...derivedColorObj.color, derivedColorObj.valpha],
-        mirrorPalette[baseColor]
+        baseColor
     ];
   
     return result;

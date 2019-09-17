@@ -1,4 +1,3 @@
-import { palette } from '../../misc/palette';
 import { getFunction } from '../../api/funcGenerator';
 
 const state = {
@@ -16,10 +15,8 @@ const actions = {
         commit('setBaseColor', { baseColor });
     },
     generateColorFunction({ commit, state }, { derivedColor }) {
-        const baseHex = palette[state.baseColor];
-
         commit('setDerivedColor', { color: derivedColor });
-        commit('setOutputFunction', { func: getFunction(baseHex, derivedColor) });
+        commit('setOutputFunction', { func: getFunction(state.baseColor, derivedColor) });
     },
     resetGenerator({ commit }) {
         commit('setBaseColor', { baseColor: '' });

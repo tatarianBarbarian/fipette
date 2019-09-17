@@ -11,7 +11,7 @@
 export default {
     name: 'ResultFunction',
     data: () => ({
-        copyBtnText: "копировать",
+        copyBtnText: "copy",
     }),
     props: {
         output: {
@@ -22,10 +22,10 @@ export default {
     methods: {
         onCopyBtnClick() {
             this.$clipboard(this.output);
-            this.copyBtnText = "🤙";
+            this.copyBtnText = "done🤙";
             setTimeout( () => {
-                this.copyBtnText = "копировать"
-            }, 1500 );
+                this.copyBtnText = "copy"
+            }, 1200 );
         }
     }
 }
